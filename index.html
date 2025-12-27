@@ -299,6 +299,21 @@
             <p class="footer-copyright">&copy; 2025 THE CAFE BAY. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Close hamburger menu when clicking on nav links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Close the menu by unchecking the toggle
+                    navToggle.checked = false;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
