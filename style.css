@@ -110,6 +110,8 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    z-index: 1001;
+    position: relative;
 }
 
 .nav-toggle-label span {
@@ -457,18 +459,35 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+    }
+    
+    .nav-container {
+        position: relative;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.98);
         width: 100%;
+        height: calc(100vh - 70px);
         text-align: center;
         transition: left 0.3s ease;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         gap: 0;
+        z-index: 999;
+        overflow-y: auto;
     }
     
     .nav-menu li {
@@ -477,6 +496,8 @@ body {
     
     .nav-toggle-label {
         display: flex;
+        z-index: 1001;
+        position: relative;
     }
     
     .nav-toggle:checked ~ .nav-menu {
@@ -493,6 +514,10 @@ body {
     
     .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    .hero-section {
+        padding-top: 100px;
     }
     
     .hero-title {
