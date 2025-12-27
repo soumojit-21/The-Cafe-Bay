@@ -3,100 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE CAFE BAY - Premium Restaurant & Café</title>
+    <title>THE CAFE BAY - Premium Dining Experience</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header / Hero Section -->
+    <!-- HEADER / HERO SECTION -->
     <header class="hero-section">
-        <nav class="top-nav">
-            <div class="nav-links">
-                <a href="#drinks">Beverage</a>
-                <a href="#starters">Starters</a>
-                <a href="#main-course">Main Course</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">THE CAFE BAY</div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="#starters" class="nav-link">Starters</a></li>
+                    <li><a href="#soup" class="nav-link">Soup</a></li>
+                    <li><a href="#noodles" class="nav-link">Noodles</a></li>
+                    <li><a href="#roll" class="nav-link">Roll</a></li>
+                    <li><a href="#pasta" class="nav-link">Pasta</a></li>
+                    <li><a href="#main-course" class="nav-link">Main Course</a></li>
+                    <li><a href="#beverages" class="nav-link">Beverages</a></li>
+                </ul>
             </div>
         </nav>
         
         <div class="hero-content">
-            <h1 class="cafe-name">THE CAFE BAY</h1>
-            <p class="tagline">Taste & Feel the Spirit of Best Quality</p>
+            <h1 class="hero-title">THE CAFE BAY</h1>
+            <p class="hero-tagline">Where Culinary Excellence Meets Timeless Elegance</p>
             <div class="hero-buttons">
                 <a href="#menu-categories" class="btn btn-primary">View Menu</a>
-                <a href="#starters" class="btn btn-secondary">Explore Dishes</a>
+                <a href="#main-course" class="btn btn-secondary">Explore Dishes</a>
             </div>
         </div>
     </header>
 
-    <!-- Menu Category Buttons -->
+    <!-- MENU CATEGORY BUTTONS -->
     <section id="menu-categories" class="menu-categories">
-        <div class="category-buttons">
-            <a href="#drinks" class="category-card">
-                <div class="category-icon">☕</div>
-                <h2>Beverage</h2>
-            </a>
+        <div class="category-container">
             <a href="#starters" class="category-card">
-                <div class="category-icon">🥗</div>
                 <h2>Starters</h2>
+                <p>Appetizing Beginnings</p>
+            </a>
+            <a href="#soup" class="category-card">
+                <h2>Soup</h2>
+                <p>Warm & Comforting</p>
+            </a>
+            <a href="#noodles" class="category-card">
+                <h2>Noodles</h2>
+                <p>Delicious Chowmein</p>
+            </a>
+            <a href="#roll" class="category-card">
+                <h2>Roll</h2>
+                <p>Fresh & Flavorful</p>
+            </a>
+            <a href="#pasta" class="category-card">
+                <h2>Pasta</h2>
+                <p>Italian Delights</p>
             </a>
             <a href="#main-course" class="category-card">
-                <div class="category-icon">🍽️</div>
                 <h2>Main Course</h2>
+                <p>Premium Dishes</p>
+            </a>
+            <a href="#beverages" class="category-card">
+                <h2>Beverages</h2>
+                <p>Refreshing Drinks</p>
             </a>
         </div>
     </section>
 
-    <!-- Drinks Section -->
-    <section id="drinks" class="menu-section">
-        <div class="section-header">
-            <h2 class="section-title">Beverage</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="menu-container">
-            <div class="menu-item">
-                <span class="item-name">Black Tea</span>
-                <span class="item-price">10 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Milk Tea</span>
-                <span class="item-price">10 / 20 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Hot Coffee</span>
-                <span class="item-price">30 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Black Coffee</span>
-                <span class="item-price">20 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Special Coffee</span>
-                <span class="item-price">50 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Green Tea</span>
-                <span class="item-price">20 Rs</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Starters Section -->
+    <!-- STARTERS SECTION -->
     <section id="starters" class="menu-section">
         <div class="section-header">
             <h2 class="section-title">Starters</h2>
-            <div class="divider"></div>
+            <div class="gold-divider"></div>
         </div>
         <div class="menu-container">
-            <div class="menu-item">
-                <span class="item-name">Manchow Soup</span>
-                <span class="item-price">50 Rs</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Thai Soup</span>
-                <span class="item-price">50 Rs</span>
-            </div>
             <div class="menu-item">
                 <span class="item-name">Chicken Lollipop</span>
                 <span class="item-price">25 Rs</span>
@@ -144,17 +128,31 @@
         </div>
     </section>
 
-    <!-- Main Course Section -->
-    <section id="main-course" class="menu-section">
+    <!-- SOUP SECTION -->
+    <section id="soup" class="menu-section">
         <div class="section-header">
-            <h2 class="section-title">Main Course</h2>
-            <div class="divider"></div>
+            <h2 class="section-title">Soup</h2>
+            <div class="gold-divider"></div>
         </div>
         <div class="menu-container">
             <div class="menu-item">
-                <span class="item-name">Egg Roll</span>
-                <span class="item-price">35 Rs</span>
+                <span class="item-name">Manchow Soup</span>
+                <span class="item-price">50 Rs</span>
             </div>
+            <div class="menu-item">
+                <span class="item-name">Thai Soup</span>
+                <span class="item-price">50 Rs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOODLES SECTION -->
+    <section id="noodles" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">Noodles (Chowmein)</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="menu-container">
             <div class="menu-item">
                 <span class="item-name">Egg Chowmein</span>
                 <span class="item-price">45 Rs</span>
@@ -167,6 +165,60 @@
                 <span class="item-name">Mixed Chowmein</span>
                 <span class="item-price">120 Rs</span>
             </div>
+        </div>
+    </section>
+
+    <!-- ROLL SECTION -->
+    <section id="roll" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">Roll</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-item">
+                <span class="item-name">Egg Roll</span>
+                <span class="item-price">35 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Chicken Roll</span>
+                <span class="item-price">60 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Double Egg Roll</span>
+                <span class="item-price">45 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Chicken Double Roll</span>
+                <span class="item-price">85 Rs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PASTA SECTION -->
+    <section id="pasta" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">Pasta</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-item">
+                <span class="item-name">Chicken Pasta</span>
+                <span class="item-price">139 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Mixed Pasta</span>
+                <span class="item-price">159 Rs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN COURSE SECTION -->
+    <section id="main-course" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">Main Course</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="menu-container">
             <div class="menu-item">
                 <span class="item-name">Fried Rice</span>
                 <span class="item-price">70 Rs</span>
@@ -203,22 +255,48 @@
                 <span class="item-name">Butter Garlic Chicken</span>
                 <span class="item-price">99 Rs</span>
             </div>
+        </div>
+    </section>
+
+    <!-- BEVERAGES SECTION -->
+    <section id="beverages" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">Beverages</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="menu-container">
             <div class="menu-item">
-                <span class="item-name">Chicken Pasta</span>
-                <span class="item-price">139 Rs</span>
+                <span class="item-name">Black Tea</span>
+                <span class="item-price">10 Rs</span>
             </div>
             <div class="menu-item">
-                <span class="item-name">Mixed Pasta</span>
-                <span class="item-price">159 Rs</span>
+                <span class="item-name">Milk Tea</span>
+                <span class="item-price">10 / 20 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Coffee</span>
+                <span class="item-price">30 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Black Coffee</span>
+                <span class="item-price">20 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Special Coffee</span>
+                <span class="item-price">50 Rs</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Green Tea</span>
+                <span class="item-price">20 Rs</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
-            <h3 class="footer-name">THE CAFE BAY</h3>
-            <p class="copyright">&copy; 2025 THE CAFE BAY. All rights reserved.</p>
+            <h3 class="footer-title">THE CAFE BAY</h3>
+            <p class="footer-copyright">&copy; 2025 THE CAFE BAY. All rights reserved.</p>
         </div>
     </footer>
 </body>
